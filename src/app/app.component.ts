@@ -44,6 +44,7 @@ export class AppComponent implements OnInit {
   }
 
   onFormSubmit() {
+    this.reactiveForm.reset();
     console.log(this.reactiveForm);
   }
 }
