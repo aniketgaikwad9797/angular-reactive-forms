@@ -17,4 +17,8 @@ export class AppComponent implements OnInit {
       gender: new FormControl('male'),
     });
   }
+
+  onFormSubmit() {
+    console.log(this.reactiveForm);
+  }
 }
