@@ -28,6 +28,19 @@ export class AppComponent implements OnInit {
     this.reactiveForm.statusChanges.subscribe((value) => {
       console.log(value);
     });
+    // this.reactiveForm.setValue({
+    //   userDetails: {
+    //     userName: 'Khabib',
+    //     emailAddress: 'khabib@goat.com',
+    //   },
+    //   gender: 'male',
+    // });
+    this.reactiveForm.patchValue({
+      userDetails: {
+        emailAddress: 'abc@abc.com',
+      },
+      gender: 'female',
+    });
   }
 
   onFormSubmit() {
